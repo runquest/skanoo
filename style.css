@@ -5,7 +5,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 *,
@@ -18,28 +17,28 @@ html {
 h1 {
   font-family: 'Old Standard TT', serif;
   font-style: normal;
-  font-size: 120px;
+  font-size: 8em;
   color: #44555f7a;
 }
 
 h2 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 90px;
+  font-size: 7em;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 36px;
+  line-height: 0.85;
   text-transform: none;
   color: #44555F;
 }
 
 h3 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 40px;
+  font-size: 2.5em;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 36px;
+  line-height: 0.85;
   text-transform: none;
   color: #44555F;
 }
@@ -47,24 +46,24 @@ h3 {
 p {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
   line-height: 1.75;
   color: #44555f8a;
 }
 
 header {
-  padding: 24px;
+  margin: 4em;
 }
 
 blockquote {
   font-family: 'Old Standard TT', serif;
   font-style: italic;
-  letter-spacing: 4px;
-  font-size: 22px;
+  letter-spacing: 0.2em;
+  font-size: 1.3em;
   color: #44555fd6;
-  padding: 56px;
-  margin: 8px;
+  padding: 2em;
+  margin: 0.5em;
   border-top: 1px solid #44555f7a;
   border-bottom: 1px solid #44555f7a;
 }
@@ -76,4 +75,8 @@ blockquote {
 
 span.author {
   font-style: initial;
+}
+
+div.about {
+  border-top: 1px solid #44555f7a;
 }
