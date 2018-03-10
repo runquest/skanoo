@@ -13,3 +13,67 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+
+h1 {
+  font-family: 'Old Standard TT', serif;
+  font-style: normal;
+  font-size: 120px;
+  color: #44555f7a;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-transform: none;
+  color: #44555F;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-transform: none;
+  color: #44555F;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1.75;
+  color: #44555f8a;
+}
+
+header {
+  padding: 24px;
+}
+
+blockquote {
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-size: 22px;
+  color: #44555fd6;
+  padding: 56px;
+  margin: 8px;
+  border-top: 1px solid #44555f7a;
+  border-bottom: 1px solid #44555f7a;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+span.author {
+  font-style: initial;
+}
