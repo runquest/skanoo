@@ -3,8 +3,10 @@
   --black: #272727;
 }
 
-html {
+html, body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -50,10 +52,13 @@ p {
   letter-spacing: 0.1em;
   line-height: 1.75;
   color: #44555f8a;
+  margin-top: 0;
 }
 
 header {
-  margin: 4em;
+  margin: 4em auto;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 blockquote {
@@ -77,6 +82,92 @@ span.author {
   font-style: initial;
 }
 
-div.about {
+.about-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-areas: 'face about order';
+  grid-gap: 20px;
   border-top: 1px solid #44555f7a;
+  align-items: center;
+  justify-items: center;
 }
+
+.image {
+  background: url('./images/zaneta-about.jpg');
+  background-repeat: no-repeat;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  max-height: 300px;
+  display: block;
+  grid-area: face;
+}
+
+.about {
+  grid-area: about;
+}
+
+.order {
+  grid-area: order;
+  min-width: 490px;
+  align-self: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .about-section {
+    grid-template-areas:
+    'face' 'about' 'order';
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1559px) {
+
+  .about-section {
+    grid-template-areas:
+    'face about'
+    'order order' ;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+
+  .about-section {
+    grid-template-areas:
+    'face about order';
+    grid-gap: 40px;
+  }
+
+  .image {
+    align-self: start;
+  }
+
+  .order {
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
